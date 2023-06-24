@@ -1,0 +1,20 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.search__input {
+  background-color: v.$white;
+  border: 1px solid v.$black;
+  height: 2.375rem;
+  outline: none;
+  padding: 0.56rem 0.75rem;
+  width: 14rem;
+
+  &::placeholder {
+    color: #6c757d;
+    font-size: 0.8125rem;
+  }
+}
+
+.search__btn {
+  @include m.button-search(v.$white, v.$black, v.$black, 500, 0.02856rem);
+}
