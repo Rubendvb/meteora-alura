@@ -1,7 +1,14 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .categories {
   padding: 1.5rem 1.7rem 3rem;
+  max-width: 75rem;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    padding: 2.5rem;
+  }
 }
 
 .categories__title {
@@ -18,9 +25,33 @@
   column-gap: 1.875rem;
   row-gap: 1rem;
 
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1.875rem;
+  }
+
   &__card {
     &-img {
       width: 100%;
+
+      @include m.img-show(768px, none);
+    }
+
+    &-imgTablet {
+      display: none;
+      width: 100%;
+
+      @include m.img-show(768px, block);
+      @include m.img-show(1024px, none);
+    }
+
+    &-imgDesktop {
+      display: none;
+      width: 100%;
+
+      @include m.img-show(768px, none);
+
+      @include m.img-show(1024px, block);
     }
 
     &__div-span {
