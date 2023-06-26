@@ -1,7 +1,13 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .banner__btn span i {
   font-size: 1.875rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
 }
 
 .banner__img {
@@ -27,4 +33,24 @@
       line-height: 1.438rem;
     }
   }
+}
+
+.banner__img-tablet,
+.banner__img-desktop {
+  display: none !important;
+}
+
+.banner__img-mobile {
+  @media only screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.banner__img-tablet {
+  @include m.img-show(768px, block);
+  @include m.img-show(1024px, none);
+}
+
+.banner__img-desktop {
+  @include m.img-show(1024px, block);
 }
