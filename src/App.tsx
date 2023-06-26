@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import "./assets/styles/scss/App.scss";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
+import Facilities from "./components/Facilities";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <section className="products">
         <Products />
       </section>
+
+      <Facilities />
     </>
   );
 }
