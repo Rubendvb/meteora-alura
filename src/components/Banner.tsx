@@ -1,12 +1,12 @@
-import Carouselmobile1 from "../assets/images/Mobile/Banner carousel 1 _ 375.png";
-import Carouselmobile2 from "../assets/images/Mobile/Banner carousel 2 _ 375.png";
-import Carouselmobile3 from "../assets/images/Mobile/Banner carousel 3 _ 375.png";
-import Carouseltablet1 from "../assets/images/Tablet/Banner carousel 1 _ 768.png";
-import Carouseltablet2 from "../assets/images/Tablet/Banner carousel 2 _ 768.png";
-import Carouseltablet3 from "../assets/images/Tablet/Banner carousel 3 _ 768.png";
-import Carouseldesktop1 from "../assets/images/Desktop/Banner carousel 1 _ 1440 (1).png";
-import Carouseldesktop2 from "../assets/images/Desktop/Banner carousel 2 _ 1440 (1).png";
-import Carouseldesktop3 from "../assets/images/Desktop/Banner carousel 3 _ 1440 (1).png";
+import BannerMobile1 from "../assets/images/Mobile/Banner carousel 1 _ 375.png";
+import BannerMobile2 from "../assets/images/Mobile/Banner carousel 2 _ 375.png";
+import BannerMobile3 from "../assets/images/Mobile/Banner carousel 3 _ 375.png";
+import BannerTablet1 from "../assets/images/Tablet/Banner carousel 1 _ 768.png";
+import BannerTablet2 from "../assets/images/Tablet/Banner carousel 2 _ 768.png";
+import BannerTablet3 from "../assets/images/Tablet/Banner carousel 3 _ 768.png";
+import BannerDesktop1 from "../assets/images/Desktop/Banner carousel 1 _ 1440.png";
+import BannerDesktop2 from "../assets/images/Desktop/Banner carousel 2 _ 1440.png";
+import BannerDesktop3 from "../assets/images/Desktop/Banner carousel 3 _ 1440.png";
 
 import "../assets/styles/scss/Banner.scss";
 
@@ -38,17 +38,17 @@ export default function Banner() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src={Carouselmobile1}
+            src={BannerMobile1}
             className="d-block w-100 banner__img-mobile"
             alt="Banner 1"
           />
           <img
-            src={Carouseltablet1}
+            src={BannerTablet1}
             className="d-block w-100 banner__img-tablet"
             alt="Banner 1"
           />
           <img
-            src={Carouseldesktop1}
+            src={BannerDesktop1}
             className="d-block w-100 banner__img-desktop"
             alt="Banner 1"
           />
@@ -59,17 +59,17 @@ export default function Banner() {
             <span>Estilo e qualidade para durar. </span>
           </div>
           <img
-            src={Carouselmobile2}
+            src={BannerMobile2}
             className="d-block w-100 banner__img-mobile"
             alt="Banner 2"
           />
           <img
-            src={Carouseltablet2}
+            src={BannerTablet2}
             className="d-block w-100 banner__img-tablet"
             alt="Banner 2"
           />
           <img
-            src={Carouseldesktop2}
+            src={BannerDesktop2}
             className="d-block w-100 banner__img-desktop"
             alt="Banner 2"
           />
@@ -80,17 +80,17 @@ export default function Banner() {
             <span>Alto impacto visual, baixo impacto ambiental.</span>
           </div>
           <img
-            src={Carouselmobile3}
+            src={BannerMobile3}
             className="d-block w-100 banner__img-mobile"
             alt="Banner 3"
           />
           <img
-            src={Carouseltablet3}
+            src={BannerTablet3}
             className="d-block w-100 banner__img-tablet"
             alt="Banner 3"
           />
           <img
-            src={Carouseldesktop3}
+            src={BannerDesktop3}
             className="d-block w-100 banner__img-desktop"
             alt="Banner 3"
           />

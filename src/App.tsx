@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import Banner from "./components/Banner";
 
 import "./assets/styles/scss/App.scss";
+import Categories from "./components/Categories";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
 
       <section className="banner">
         <Banner />
+      </section>
+
+      <section className="categories">
+        <Categories />
       </section>
     </>
   );

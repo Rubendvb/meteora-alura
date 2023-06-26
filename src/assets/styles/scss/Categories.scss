@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+.categories__title {
+  color: v.$black-title;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.categories__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  row-gap: 1rem;
+
+  &__card {
+    &-img {
+      width: 100%;
+    }
+
+    &__div-span {
+      background-color: v.$black;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: center;
+
+      span {
+        color: v.$white;
+        font-weight: 500;
+      }
+    }
+  }
+}
