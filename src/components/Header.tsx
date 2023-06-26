@@ -34,16 +34,16 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="header__button">
+      <div className="header__button__container">
         <input
-          className="header__button__input"
+          className="header__button__container__input"
           type="text"
           name=""
           id=""
           placeholder="Digite o produto"
         />
 
-        <button className="header__button-search">Buscar</button>
+        <button className="header__button__container-search">Buscar</button>
       </div>
     </header>
   );

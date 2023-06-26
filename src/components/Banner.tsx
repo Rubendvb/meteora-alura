@@ -54,8 +54,9 @@ export default function Banner() {
               alt="Banner 1"
             />
           </div>
+
           <div className="carousel-item banner__img">
-            <div>
+            <div className="banner__img__content first-element">
               <h3>COLEÇÃO ATEMPORAL</h3>
               <span>Estilo e qualidade para durar. </span>
             </div>
@@ -75,8 +76,9 @@ export default function Banner() {
               alt="Banner 2"
             />
           </div>
+
           <div className="carousel-item banner__img">
-            <div>
+            <div className="banner__img__content align-end">
               <h3>COLEÇÃO ATEMPORAL</h3>
               <span>Alto impacto visual, baixo impacto ambiental.</span>
             </div>

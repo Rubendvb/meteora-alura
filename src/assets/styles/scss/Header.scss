@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .header {
   padding: 0.81rem 1.44rem;
@@ -7,6 +8,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    gap: 2rem;
+  }
 
   &__list {
     width: 100%;
@@ -51,6 +56,10 @@
           &:checked ~ ul {
             transform: none;
           }
+
+          @media only screen and (min-width: 768px) {
+            display: none;
+          }
         }
 
         span {
@@ -72,6 +81,10 @@
           &:nth-last-child(2) {
             transform-origin: 0% 100%;
           }
+
+          @media only screen and (min-width: 768px) {
+            display: none;
+          }
         }
       }
 
@@ -88,10 +101,27 @@
         transform: translate(0, -100%);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
+        @media only screen and (min-width: 768px) {
+          position: relative;
+          background-color: unset;
+          transform-origin: unset;
+          transform: unset;
+          transition: unset;
+          padding: 0;
+          margin: 0;
+          flex-direction: row;
+          width: 100%;
+          gap: 1.25rem;
+        }
+
         &__li {
           cursor: pointer;
           padding: 0.5rem 0;
           border-bottom: 1px solid #ced4da;
+
+          @media only screen and (min-width: 768px) {
+            border-bottom: unset;
+          }
 
           &:last-child {
             border-bottom: unset;
@@ -103,6 +133,10 @@
             text-decoration-line: none;
             white-space: nowrap;
 
+            @media only screen and (min-width: 768px) {
+              font-size: 0.813rem;
+            }
+
             &:hover {
               color: v.$vivid-yellow;
               font-weight: 700;
@@ -113,22 +147,37 @@
     }
   }
 
-  &__button {
+  &__button__container {
     display: none;
     gap: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+    }
 
     &__input {
       height: 2.375rem;
       max-width: 10.625rem;
       outline: none;
       padding: 0.94rem;
+
+      @media only screen and (min-width: 768px) {
+        width: 9.063rem;
+      }
+
+      &::placeholder {
+        @media only screen and (min-width: 768px) {
+          font-size: 0.813rem;
+        }
+      }
     }
 
     &-search {
-      background-color: unset;
-      color: v.$white;
-      border: 1px solid v.$white;
-      padding: 0.5625rem 0.75rem;
+      @include m.button-search(unset, v.$white, v.$white, 500, 0.457px);
+
+      @media only screen and (min-width: 768px) {
+        font-size: 0.813rem;
+      }
     }
   }
 }

@@ -13,16 +13,29 @@
 .banner__img {
   position: relative;
 
-  div {
+  &__content {
+    width: 100%;
+    max-width: 20.125rem;
     position: absolute;
     top: 58%;
-    padding: 0 1.688rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    @media only screen and (min-width: 768px) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 35.75rem;
+    }
 
     h3 {
       font-size: 2rem;
       text-align: center;
       color: v.$white;
       font-weight: 500;
+
+      @media only screen and (min-width: 768px) {
+        text-align: start;
+      }
     }
 
     span {
@@ -31,6 +44,19 @@
       color: v.$white;
       text-align: center;
       line-height: 1.438rem;
+
+      @media only screen and (min-width: 768px) {
+        text-align: start;
+      }
+    }
+  }
+
+  .first-element {
+    @media only screen and (min-width: 768px) {
+      h3,
+      span {
+        text-align: end;
+      }
     }
   }
 }
