@@ -9,7 +9,7 @@ import "../assets/styles/scss/Products.scss";
 
 export default function Products() {
   return (
-    <>
+    <section className="products">
       <h3 className="products__title">Produtos que estão bombando!</h3>
 
       <div className="products__container">
@@ -112,6 +112,6 @@ export default function Products() {
           </div>
         </article>
       </div>
-    </>
+    </section>
   );
 }

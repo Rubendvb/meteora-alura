@@ -6,29 +6,24 @@ import "./assets/styles/scss/App.scss";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
 import Facilities from "./components/Facilities";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
     <>
       <Header />
 
-      <section className="search">
-        <Search />
-      </section>
+      <Search />
 
-      <section className="banner">
-        <Banner />
-      </section>
+      <Banner />
 
-      <section className="categories">
-        <Categories />
-      </section>
+      <Categories />
 
-      <section className="products">
-        <Products />
-      </section>
+      <Products />
 
       <Facilities />
+
+      <Newsletter />
     </>
   );
 }

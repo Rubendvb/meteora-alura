@@ -1,5 +1,9 @@
 @use "variables" as v;
 
+.products {
+  padding: 1.5rem 1.7rem 3rem;
+}
+
 .products__title {
   color: v.$black-title;
   text-align: center;

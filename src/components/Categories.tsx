@@ -9,7 +9,7 @@ import "../assets/styles/scss/Categories.scss";
 
 export default function Categories() {
   return (
-    <>
+    <section className="categories">
       <h3 className="categories__title">Busque por categoria:</h3>
 
       <div className="categories__container">
@@ -74,6 +74,6 @@ export default function Categories() {
           </div>
         </article>
       </div>
-    </>
+    </section>
   );
 }

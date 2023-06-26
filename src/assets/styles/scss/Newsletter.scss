@@ -1,0 +1,38 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.newsletter {
+  padding: 1.813rem;
+}
+
+.newsletter__container {
+  padding: 1.5rem;
+  border: 1px solid v.$black;
+
+  &-text {
+    text-align: center;
+    color: v.$black-title;
+    font-size: 1rem;
+    line-height: 1.438rem;
+  }
+
+  &__form {
+    display: flex;
+
+    &-input {
+      width: 100%;
+      border: 1px solid v.$black;
+      padding: 0.5rem 1rem;
+    }
+
+    &-btn {
+      @include m.button-search(
+        v.$light-violet,
+        v.$light-violet,
+        v.$white,
+        500,
+        0.457px
+      );
+    }
+  }
+}
