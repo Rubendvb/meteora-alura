@@ -1,1 +1,12 @@
+@use "variables" as v;
 
+.footer {
+  background-color: v.$black;
+
+  &-text {
+    text-align: center;
+    color: v.$white;
+    font-size: 0.813rem;
+    padding: 1rem 1.5rem;
+  }
+}

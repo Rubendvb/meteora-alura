@@ -24,6 +24,12 @@ function App() {
       <Facilities />
 
       <Newsletter />
+
+      <footer className="footer">
+        <p className="footer-text">
+          2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.
+        </p>
+      </footer>
     </>
   );
 }
