@@ -1,0 +1,64 @@
+@use "variables" as v;
+
+.products__title {
+  color: v.$black-title;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  &__card {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+
+    &-img {
+      width: 100%;
+    }
+
+    & > div {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &-title {
+      color: v.$black-title;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.438rem;
+      margin: 0 0 1rem;
+    }
+
+    &-text {
+      color: v.$black-title;
+      font-size: 0.813rem;
+      line-height: 20px;
+      text-align: start;
+      margin: 0 0 1rem;
+    }
+
+    &-span {
+      color: v.$black-title;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.438rem;
+      margin: 0 0 0.625rem;
+    }
+
+    &-btn {
+      padding: 0.563rem 1rem;
+      background-color: v.$light-violet;
+      border: none;
+      color: v.$white;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.03rem;
+    }
+  }
+}
