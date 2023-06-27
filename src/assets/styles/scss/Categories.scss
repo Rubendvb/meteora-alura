@@ -1,0 +1,69 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.categories {
+  padding: 1.5rem 1.7rem 3rem;
+  max-width: 75rem;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    padding: 2.5rem;
+  }
+}
+
+.categories__title {
+  color: v.$black-title;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.categories__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  row-gap: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1.875rem;
+  }
+
+  &__card {
+    &-img {
+      width: 100%;
+
+      @include m.img-show(768px, none);
+    }
+
+    &-imgTablet {
+      display: none;
+      width: 100%;
+
+      @include m.img-show(768px, block);
+      @include m.img-show(1024px, none);
+    }
+
+    &-imgDesktop {
+      display: none;
+      width: 100%;
+
+      @include m.img-show(768px, none);
+
+      @include m.img-show(1024px, block);
+    }
+
+    &__div-span {
+      background-color: v.$black;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: center;
+
+      span {
+        color: v.$white;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+* {
+  font-family: v.$font-family-inter;
+  box-sizing: border-box;
+}

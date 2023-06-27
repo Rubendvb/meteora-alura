@@ -1,0 +1,52 @@
+@use "variables" as v;
+
+.facilities {
+  padding: 2rem 1.7rem;
+  background-color: v.$black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    color: v.$white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 2rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 19rem;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      &__div {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          font-size: 1rem;
+          font-weight: 700;
+          color: v.$vivid-yellow;
+          margin: 0 0 1rem;
+        }
+
+        &-text {
+          color: v.$white;
+          font-size: 0.813rem;
+          line-height: 1.25rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

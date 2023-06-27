@@ -1,0 +1,82 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.banner__btn span i {
+  font-size: 1.875rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.banner__img {
+  position: relative;
+
+  &__content {
+    width: 100%;
+    max-width: 20.125rem;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    @media only screen and (min-width: 768px) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 35.75rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      color: v.$white;
+      font-weight: 500;
+
+      @media only screen and (min-width: 768px) {
+        text-align: start;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 1rem;
+      color: v.$white;
+      text-align: center;
+      line-height: 1.438rem;
+
+      @media only screen and (min-width: 768px) {
+        text-align: start;
+      }
+    }
+  }
+
+  .first-element {
+    @media only screen and (min-width: 768px) {
+      h3,
+      span {
+        text-align: end;
+      }
+    }
+  }
+}
+
+.banner__img-tablet,
+.banner__img-desktop {
+  display: none !important;
+}
+
+.banner__img-mobile {
+  @media only screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.banner__img-tablet {
+  @include m.img-show(768px, block);
+  @include m.img-show(1024px, none);
+}
+
+.banner__img-desktop {
+  @include m.img-show(1024px, block);
+}

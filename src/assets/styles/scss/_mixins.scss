@@ -1,0 +1,28 @@
+@mixin tablet-view {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+@mixin button-search(
+  $bg-color,
+  $br-color,
+  $fnt-color,
+  $fnt-weight,
+  $ltr-spcng
+) {
+  background-color: $bg-color;
+  border: 1px solid $br-color;
+  color: $fnt-color;
+  font-size: 1rem;
+  font-weight: $fnt-weight;
+  letter-spacing: $ltr-spcng;
+  padding: 0.56rem;
+  text-align: center;
+}
+
+@mixin img-show($width-view, $view) {
+  @media only screen and (min-width: $width-view) {
+    display: $view !important;
+  }
+}
