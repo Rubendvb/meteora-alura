@@ -3,21 +3,39 @@
 
 .newsletter {
   padding: 1.813rem;
+
+  @media only screen and (min-width: 768px) {
+    padding: 2.5rem;
+  }
 }
 
 .newsletter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.5rem;
   border: 1px solid v.$black;
+
+  @media only screen and (min-width: 768px) {
+    padding: 2.5rem;
+  }
 
   &-text {
     text-align: center;
     color: v.$black-title;
     font-size: 1rem;
     line-height: 1.438rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.25rem;
+      max-width: 35.625rem;
+      margin: 0 0 1.5rem;
+    }
   }
 
   &__form {
     display: flex;
+    width: 27.5rem;
 
     &-input {
       width: 100%;
