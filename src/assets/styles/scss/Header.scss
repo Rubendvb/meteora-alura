@@ -172,6 +172,10 @@
                 font-size: 0.813rem;
               }
 
+              @media only screen and (min-width: 768px) {
+                font-size: 1rem;
+              }
+
               &:hover {
                 color: v.$vivid-yellow;
                 font-weight: 700;
