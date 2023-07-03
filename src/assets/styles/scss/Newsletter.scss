@@ -3,6 +3,8 @@
 
 .newsletter {
   padding: 1.813rem;
+  max-width: 96rem;
+  margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
     padding: 2.5rem;
@@ -35,7 +37,14 @@
 
   &__form {
     display: flex;
-    width: 27.5rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 27.5rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 33.75rem;
+    }
 
     &-input {
       width: 100%;
