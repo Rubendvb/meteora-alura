@@ -18,6 +18,7 @@ import BolsaTablet from "../assets/images/Tablet/Imagens Cards/bolsa.png";
 import BolsaDesktop from "../assets/images/Desktop/Imagens Cards/Bolsa.png";
 
 import "../assets/styles/scss/Products.scss";
+import Modal from "./Modal";
 
 export default function Products() {
   return (
@@ -50,7 +51,13 @@ export default function Products() {
               verão. Modelagem unissex.
             </p>
             <span className="products__container__card-span">R$ 70,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
 
@@ -78,7 +85,13 @@ export default function Products() {
               Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!
             </p>
             <span className="products__container__card-span">R$ 180,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
 
@@ -105,7 +118,13 @@ export default function Products() {
               unissex.
             </p>
             <span className="products__container__card-span">R$ 250,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
 
@@ -132,7 +151,13 @@ export default function Products() {
               autêntica!
             </p>
             <span className="products__container__card-span">R$ 150,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
 
@@ -158,7 +183,13 @@ export default function Products() {
               Armação metálica em grafite com lentes arredondadas. Sem erro!
             </p>
             <span className="products__container__card-span">R$ 120,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
 
@@ -185,9 +216,26 @@ export default function Products() {
               acompanhar você por uma vida!
             </p>
             <span className="products__container__card-span">R$ 120,00</span>
-            <button className="products__container__card-btn">Ver mais</button>
+            <button
+              className="products__container__card-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Ver mais
+            </button>
           </div>
         </article>
+      </div>
+
+      {/* <!-- Modal --> */}
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <Modal />
       </div>
     </section>
   );
