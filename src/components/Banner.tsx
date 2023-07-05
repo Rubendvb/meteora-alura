@@ -1,12 +1,12 @@
-import BannerMobile1 from "../assets/images/Mobile/Banner carousel 1 _ 375.png";
-import BannerMobile2 from "../assets/images/Mobile/Banner carousel 2 _ 375.png";
-import BannerMobile3 from "../assets/images/Mobile/Banner carousel 3 _ 375.png";
-import BannerTablet1 from "../assets/images/Tablet/Banner carousel 1 _ 768.png";
-import BannerTablet2 from "../assets/images/Tablet/Banner carousel 2 _ 768.png";
-import BannerTablet3 from "../assets/images/Tablet/Banner carousel 3 _ 768.png";
-import BannerDesktop1 from "../assets/images/Desktop/Banner carousel 1 _ 1440.png";
-import BannerDesktop2 from "../assets/images/Desktop/Banner carousel 2 _ 1440.png";
-import BannerDesktop3 from "../assets/images/Desktop/Banner carousel 3 _ 1440.png";
+import BannerMobile1 from "/public/images/Mobile/Banner carousel 1 _ 375.png";
+import BannerMobile2 from "/public/images/Mobile/Banner carousel 2 _ 375.png";
+import BannerMobile3 from "/public/images/Mobile/Banner carousel 3 _ 375.png";
+import BannerTablet1 from "/public/images/Tablet/Banner carousel 1 _ 768.png";
+import BannerTablet2 from "/public/images/Tablet/Banner carousel 2 _ 768.png";
+import BannerTablet3 from "/public/images/Tablet/Banner carousel 3 _ 768.png";
+import BannerDesktop1 from "/public/images/Desktop/Banner carousel 1 _ 1440.png";
+import BannerDesktop2 from "/public/images/Desktop/Banner carousel 2 _ 1440.png";
+import BannerDesktop3 from "/public/images/Desktop/Banner carousel 3 _ 1440.png";
 
 import "../assets/styles/scss/Banner.scss";
 

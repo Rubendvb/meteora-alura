@@ -1,6 +1,6 @@
-import CheckCircle from "../assets/images/Mobile/Ícones/check-circle.svg";
-import Close from "../assets/images/Mobile/Ícones/close.svg";
-import JaquetaMobile from "../assets/images/Mobile/Imagens cards/Card jaqueta jeans.png";
+import CheckCircle from "/public/images/Mobile/Ícones/check-circle.svg";
+import Close from "/public/images/Mobile/Ícones/close.svg";
+import JaquetaMobile from "/public/images/Mobile/Imagens cards/Card jaqueta jeans.png";
 
 import "../assets/styles/scss/ModalProducts.scss";
 

@@ -1,33 +1,93 @@
-import CamisetaMobile from "../assets/images/Mobile/Imagens cards/Card camiseta.png";
-import CamisetaTablet from "../assets/images/Tablet/Imagens Cards/camiseta.png";
-import CamisetaDesktop from "../assets/images/Desktop/Imagens Cards/Camiseta.png";
-import CalçaMobile from "../assets/images/Mobile/Imagens cards/Card calça.png";
-import CalçaTablet from "../assets/images/Tablet/Imagens Cards/calça.png";
-import CalçaDesktop from "../assets/images/Desktop/Imagens Cards/Calça.png";
-import TenisMobile from "../assets/images/Mobile/Imagens cards/Card tenis.png";
-import TenisTablet from "../assets/images/Tablet/Imagens Cards/tenis.png";
-import TenisDesktop from "../assets/images/Desktop/Imagens Cards/Tenis.png";
-import JaquetaMobile from "../assets/images/Mobile/Imagens cards/Card jaqueta jeans.png";
-import JaquetaTablet from "../assets/images/Tablet/Imagens Cards/jaqueta jeans.png";
-import JaquetaDesktop from "../assets/images/Desktop/Imagens Cards/Jaqueta.png";
-import OculosMobile from "../assets/images/Mobile/Imagens cards/Cards óculos.png";
-import OculosTablet from "../assets/images/Tablet/Imagens Cards/óculos.png";
-import OculosDesktop from "../assets/images/Desktop/Imagens Cards/óculos.png";
-import BolsaMobile from "../assets/images/Mobile/Imagens cards/Card bolsa.png";
-import BolsaTablet from "../assets/images/Tablet/Imagens Cards/bolsa.png";
-import BolsaDesktop from "../assets/images/Desktop/Imagens Cards/Bolsa.png";
+import { useEffect, useState } from "react";
 
 import ModalProducts from "./ModalProducts";
 
+import * as productsService from "../service/ProductsService";
+
 import "../assets/styles/scss/Products.scss";
 
+// import CamisetaMobile from "../assets/images/Mobile/Imagens cards/Card camiseta.png";
+// import CamisetaTablet from "../assets/images/Tablet/Imagens Cards/camiseta.png";
+// import CamisetaDesktop from "../assets/images/Desktop/Imagens Cards/Camiseta.png";
+// import CalçaMobile from "../assets/images/Mobile/Imagens cards/Card calça.png";
+// import CalçaTablet from "../assets/images/Tablet/Imagens Cards/calça.png";
+// import CalçaDesktop from "../assets/images/Desktop/Imagens Cards/Calça.png";
+// import TenisMobile from "../assets/images/Mobile/Imagens cards/Card tenis.png";
+// import TenisTablet from "../assets/images/Tablet/Imagens Cards/tenis.png";
+// import TenisDesktop from "../assets/images/Desktop/Imagens Cards/Tenis.png";
+// import JaquetaMobile from "../assets/images/Mobile/Imagens cards/Card jaqueta jeans.png";
+// import JaquetaTablet from "../assets/images/Tablet/Imagens Cards/jaqueta jeans.png";
+// import JaquetaDesktop from "../assets/images/Desktop/Imagens Cards/Jaqueta.png";
+// import OculosMobile from "../assets/images/Mobile/Imagens cards/Cards óculos.png";
+// import OculosTablet from "../assets/images/Tablet/Imagens Cards/óculos.png";
+// import OculosDesktop from "../assets/images/Desktop/Imagens Cards/óculos.png";
+// import BolsaMobile from "../assets/images/Mobile/Imagens cards/Card bolsa.png";
+// import BolsaTablet from "../assets/images/Tablet/Imagens Cards/bolsa.png";
+// import BolsaDesktop from "../assets/images/Desktop/Imagens Cards/Bolsa.png";
+import { ProductProps } from "../@types/product";
+
 export default function Products() {
+  const [products, setProducts] = useState<ProductProps[]>([]);
+
+  const loadProducts = async () => {
+    const res = await productsService.getAllProducts();
+
+    setProducts(res.data);
+  };
+
+  useEffect(() => {
+    loadProducts();
+  }, []);
+
+  console.log(products);
+
   return (
     <section className="products">
       <h3 className="products__title">Produtos que estão bombando!</h3>
 
       <div className="products__container">
-        <article className="products__container__card">
+        {products &&
+          products.map((product) => {
+            return (
+              <article className="products__container__card">
+                <img
+                  className="products__container__card-img"
+                  src={product.image?.mobile}
+                  alt=""
+                />
+                <img
+                  className="products__container__card-imgTablet"
+                  src={product.image?.tablet}
+                  alt=""
+                />
+                <img
+                  className="products__container__card-imgDesktop"
+                  src={product.image?.desktop}
+                  alt=""
+                />
+                <div>
+                  <h4 className="products__container__card-title">
+                    {product.title}
+                  </h4>
+                  <p className="products__container__card-text">
+                    {product.description}
+                  </p>
+                  <span className="products__container__card-span">
+                    {product.price}
+                  </span>
+                  <button
+                    className="products__container__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProducts"
+                  >
+                    Ver mais
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+
+        {/* <article className="products__container__card">
           <img
             className="products__container__card-img"
             src={CamisetaMobile}
@@ -225,7 +285,7 @@ export default function Products() {
               Ver mais
             </button>
           </div>
-        </article>
+        </article> */}
       </div>
 
       {/* <!-- Modal Products --> */}

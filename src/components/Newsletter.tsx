@@ -1,5 +1,5 @@
-import Close from "../assets/images/Mobile/Ícones/close.svg";
-import CheckCircle from "../assets/images/Mobile/Ícones/check-circle.svg";
+import Close from "/public/images/Mobile/Ícones/close.svg";
+import CheckCircle from "/public/images/Mobile/Ícones/check-circle.svg";
 
 import "../assets/styles/scss/Newsletter.scss";
 

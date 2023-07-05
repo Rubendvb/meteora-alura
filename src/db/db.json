@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Camiseta Conforto",
+      "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "price": "R$ 70,00",
+      "image": {
+        "mobile": "/public/images/Mobile/Imagens cards/Card camiseta.png.png",
+        "tablet": "/public/images/Tablet/Imagens Cards/camiseta.png",
+        "desktop": "/public/images/Desktop/Imagens Cards/Camiseta.png"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Calça Alfaiataria",
+      "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+      "price": "R$ 180,00",
+      "image": {
+        "mobile": "/public/images/Mobile/Imagens cards/Card calça.png",
+        "tablet": "/public/images/Tablet/Imagens Cards/calça.png",
+        "desktop": "/public/images/Desktop/Imagens Cards/Calça.png"
+      }
+    }
+  ]
+}
