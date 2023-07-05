@@ -27,6 +27,10 @@
       max-width: 35.75rem;
     }
 
+    @media only screen and (min-width: 1024px) {
+      max-width: 69rem;
+    }
+
     h3 {
       font-size: 2rem;
       text-align: center;
@@ -35,6 +39,10 @@
 
       @media only screen and (min-width: 768px) {
         text-align: start;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        font-size: 3rem;
       }
     }
 
@@ -47,6 +55,10 @@
 
       @media only screen and (min-width: 768px) {
         text-align: start;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        font-size: 1.25rem;
       }
     }
   }

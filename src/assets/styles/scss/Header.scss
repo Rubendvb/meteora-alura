@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 75rem;
+    max-width: 90rem;
     margin: 0 auto;
 
     @media only screen and (min-width: 768px) {
@@ -32,10 +32,24 @@
 
         &-img {
           margin: 0 1.25rem 0 0;
+          @include m.img-show(768px, none);
 
           @media only screen and (min-width: 1024px) {
             margin: 0 2.5rem 0 0;
           }
+        }
+
+        &-imgTablet {
+          display: none;
+          margin: 0 1.25rem 0 0;
+          @include m.img-show(768px, block);
+          @include m.img-show(1024px, none);
+        }
+
+        &-imgDesktop {
+          display: none;
+          margin: 0 2.5rem 0 0;
+          @include m.img-show(1024px, block);
         }
 
         &__menuToggle {
@@ -131,6 +145,10 @@
             gap: 1.25rem;
           }
 
+          @media only screen and (min-width: 1024px) {
+            gap: 2.5rem;
+          }
+
           &__li {
             cursor: pointer;
             padding: 0.5rem 0;
@@ -152,6 +170,10 @@
 
               @media only screen and (min-width: 768px) {
                 font-size: 0.813rem;
+              }
+
+              @media only screen and (min-width: 1024px) {
+                font-size: 1rem;
               }
 
               &:hover {
@@ -182,9 +204,17 @@
           width: 9.063rem;
         }
 
+        @media only screen and (min-width: 1024px) {
+          width: 10.625rem;
+        }
+
         &::placeholder {
           @media only screen and (min-width: 768px) {
             font-size: 0.813rem;
+          }
+
+          @media only screen and (min-width: 1024px) {
+            font-size: 1rem;
           }
         }
       }
@@ -194,6 +224,11 @@
 
         @media only screen and (min-width: 768px) {
           font-size: 0.813rem;
+        }
+
+        @media only screen and (min-width: 1024px) {
+          // width: 5rem;
+          font-size: 1rem;
         }
       }
     }

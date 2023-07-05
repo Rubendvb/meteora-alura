@@ -3,11 +3,15 @@
 
 .categories {
   padding: 1.5rem 1.7rem 3rem;
-  max-width: 75rem;
+  max-width: 90rem;
   margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
     padding: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 4.5rem 10rem;
   }
 }
 
@@ -17,6 +21,14 @@
   margin: 0 0 1.5rem;
   font-size: 1.75rem;
   font-weight: 500;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0 0 2rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 2rem;
+  }
 }
 
 .categories__container {
@@ -28,6 +40,11 @@
   @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem 1.875rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__card {
@@ -48,6 +65,7 @@
     &-imgDesktop {
       display: none;
       width: 100%;
+      max-width: 160px;
 
       @include m.img-show(768px, none);
 

@@ -1,4 +1,6 @@
-import Logo from "../assets/images/Desktop/Logo desktop.png";
+import LogoMobile from "../assets/images/Mobile/Logo mobile.png";
+import LogoTablet from "../assets/images/Tablet/Logo tablet.png";
+import LogoDesktop from "../assets/images/Desktop/Logo desktop.png";
 
 import "../assets/styles/scss/Header.scss";
 
@@ -8,7 +10,17 @@ export default function Header() {
       <div className="header">
         <div className="header__list">
           <nav className="header__list__nav">
-            <img className="header__list__nav-img" src={Logo} alt="" />
+            <img className="header__list__nav-img" src={LogoMobile} alt="" />
+            <img
+              className="header__list__nav-imgTablet"
+              src={LogoTablet}
+              alt=""
+            />
+            <img
+              className="header__list__nav-imgDesktop"
+              src={LogoDesktop}
+              alt=""
+            />
             <div className="header__list__nav__menuToggle">
               <input type="checkbox" />
               <span></span>

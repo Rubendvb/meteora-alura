@@ -3,6 +3,8 @@
 
 .newsletter {
   padding: 1.813rem;
+  max-width: 90rem;
+  margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
     padding: 2.5rem;
@@ -20,6 +22,12 @@
     padding: 2.5rem;
   }
 
+  @media only screen and (min-width: 1024px) {
+    max-width: 45.625rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+
   &-text {
     text-align: center;
     color: v.$black-title;
@@ -31,16 +39,28 @@
       max-width: 35.625rem;
       margin: 0 0 1.5rem;
     }
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 100%;
+    }
   }
 
   &__form {
     display: flex;
-    width: 27.5rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 27.5rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 33.75rem;
+    }
 
     &-input {
       width: 100%;
       border: 1px solid v.$black;
       padding: 0.5rem 1rem;
+      outline: none;
     }
 
     &-btn {
@@ -51,6 +71,10 @@
         500,
         0.457px
       );
+
+      @media only screen and (min-width: 768px) {
+        padding: 0.563rem 1rem;
+      }
     }
   }
 }
