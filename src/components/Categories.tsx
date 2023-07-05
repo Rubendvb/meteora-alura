@@ -66,6 +66,7 @@ export default function Categories() {
             <span>Bolsas</span>
           </div>
         </article>
+
         <article className="categories__container__card">
           <img
             className="categories__container__card-img"

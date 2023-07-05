@@ -1,19 +1,24 @@
-import Header from "./components/Header";
-import Search from "./components/Search";
 import Banner from "./components/Banner";
+import Categories from "./components/Categories";
+import Facilities from "./components/Facilities";
+import Header from "./components/Header";
+import Newsletter from "./components/Newsletter";
+import Products from "./components/Products";
+import Search from "./components/Search";
 
 import "./assets/styles/scss/App.scss";
-import Categories from "./components/Categories";
-import Products from "./components/Products";
-import Facilities from "./components/Facilities";
-import Newsletter from "./components/Newsletter";
+import { useState } from "react";
 
 function App() {
+  const [search, setSearch] = useState("");
+
+  console.log(search);
+
   return (
     <>
       <Header />
 
-      <Search />
+      <Search search={search} setSearch={setSearch} />
 
       <Banner />
 

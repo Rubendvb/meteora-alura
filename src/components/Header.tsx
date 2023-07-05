@@ -3,8 +3,9 @@ import LogoTablet from "/images/Tablet/Logo tablet.png";
 import LogoDesktop from "/images/Desktop/Logo desktop.png";
 
 import "../assets/styles/scss/Header.scss";
+import { searchProps } from "../@types/search";
 
-export default function Header() {
+export default function Header({ search, setSearch }: searchProps) {
   return (
     <header className="header__container">
       <div className="header">
@@ -47,11 +48,13 @@ export default function Header() {
           <input
             className="header__button__container__input"
             type="text"
-            name=""
-            id=""
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             placeholder="Digite o produto"
           />
-          <button className="header__button__container-search">Buscar</button>
+          <button className="header__button__container-search" type="submit">
+            Buscar
+          </button>
         </div>
       </div>
     </header>
