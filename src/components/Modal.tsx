@@ -6,9 +6,9 @@ import "../assets/styles/scss/Modal.scss";
 
 export default function Modal() {
   return (
-    <div className="containerModal">
+    <>
       <div className="modal-dialog">
-        <div className="modal-content">
+        <div className="modal-content containerModal">
           <div className="modal-header containerModal__header">
             <img src={CheckCircle} alt="" />
             <h1
@@ -190,15 +190,14 @@ export default function Modal() {
                     </div>
                   </div>
                 </div>
+                <button type="button" className="containerModal__body__button">
+                  Adicionar à sacola
+                </button>
               </div>
             </div>
-
-            <button type="button" className="containerModal__body__button">
-              Adicionar à sacola
-            </button>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

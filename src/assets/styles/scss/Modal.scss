@@ -1,9 +1,22 @@
 @use "variables" as v;
 @use "mixins" as m;
 
+.modal-dialog {
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    max-width: unset;
+  }
+}
+
 .containerModal {
+  @media only screen and (min-width: 768px) {
+    width: 700px;
+    margin: 2rem auto;
+  }
+
   &__header {
     background-color: v.$black;
+    padding: 1.1rem 1.8rem;
 
     &__title {
       color: v.$white;
@@ -12,6 +25,10 @@
       line-height: normal;
       margin: 0;
       padding: 0 1.5rem;
+
+      @media only screen and (min-width: 768px) {
+        width: 100%;
+      }
     }
   }
 
@@ -21,6 +38,12 @@
     > div {
       border: 1px solid rgba(0, 0, 0, 0.13);
       border-radius: 4px 4px 0 0;
+
+      @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+      }
     }
 
     &__img {
@@ -119,6 +142,7 @@
 
     &__button {
       margin-top: 1rem;
+      width: 60%;
 
       @include m.button-search(
         v.$light-violet,
@@ -127,6 +151,10 @@
         500,
         0.457px
       );
+
+      @media only screen and (min-width: 768px) {
+        width: 61%;
+      }
     }
   }
 }
