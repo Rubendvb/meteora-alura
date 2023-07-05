@@ -2,9 +2,9 @@ import CheckCircle from "../assets/images/Mobile/Ícones/check-circle.svg";
 import Close from "../assets/images/Mobile/Ícones/close.svg";
 import JaquetaMobile from "../assets/images/Mobile/Imagens cards/Card jaqueta jeans.png";
 
-import "../assets/styles/scss/Modal.scss";
+import "../assets/styles/scss/ModalProducts.scss";
 
-export default function Modal() {
+export default function ModalProducts() {
   return (
     <>
       <div className="modal-dialog">
@@ -13,11 +13,12 @@ export default function Modal() {
             <img src={CheckCircle} alt="" />
             <h1
               className="modal-title fs-5 containerModal__header__title"
-              id="exampleModalLabel"
+              id="modalProducts"
             >
               Confira detalhes sobre o produto
             </h1>
             <img
+              className="containerModal__header__img"
               src={Close}
               alt=""
               data-bs-dismiss="modal"

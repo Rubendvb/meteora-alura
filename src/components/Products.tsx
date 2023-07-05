@@ -17,8 +17,9 @@ import BolsaMobile from "../assets/images/Mobile/Imagens cards/Card bolsa.png";
 import BolsaTablet from "../assets/images/Tablet/Imagens Cards/bolsa.png";
 import BolsaDesktop from "../assets/images/Desktop/Imagens Cards/Bolsa.png";
 
+import ModalProducts from "./ModalProducts";
+
 import "../assets/styles/scss/Products.scss";
-import Modal from "./Modal";
 
 export default function Products() {
   return (
@@ -54,7 +55,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -88,7 +89,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -121,7 +122,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -154,7 +155,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -186,7 +187,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -219,7 +220,7 @@ export default function Products() {
             <button
               className="products__container__card-btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#modalProducts"
             >
               Ver mais
             </button>
@@ -227,15 +228,15 @@ export default function Products() {
         </article>
       </div>
 
-      {/* <!-- Modal --> */}
+      {/* <!-- Modal Products --> */}
       <div
         className="modal fade"
-        id="exampleModal"
+        id="modalProducts"
         tabIndex={-1}
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="modalProducts"
         aria-hidden="true"
       >
-        <Modal />
+        <ModalProducts />
       </div>
     </section>
   );
