@@ -1,6 +1,6 @@
-import Diamond from "/public/images/Mobile/Ícones/x-diamond.png";
-import ArrowRepeat from "/public/images/Mobile/Ícones/arrow-repeat.png";
-import Flower from "/public/images/Mobile/Ícones/flower1.png";
+import Diamond from "/images/Mobile/Ícones/x-diamond.png";
+import ArrowRepeat from "/images/Mobile/Ícones/arrow-repeat.png";
+import Flower from "/images/Mobile/Ícones/flower1.png";
 
 import "../assets/styles/scss/Facilities.scss";
 

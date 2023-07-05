@@ -1,6 +1,6 @@
-import LogoMobile from "/public/images/Mobile/Logo mobile.png";
-import LogoTablet from "/public/images/Tablet/Logo tablet.png";
-import LogoDesktop from "/public/images/Desktop/Logo desktop.png";
+import LogoMobile from "/images/Mobile/Logo mobile.png";
+import LogoTablet from "/images/Tablet/Logo tablet.png";
+import LogoDesktop from "/images/Desktop/Logo desktop.png";
 
 import "../assets/styles/scss/Header.scss";
 

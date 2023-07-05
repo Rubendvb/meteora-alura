@@ -6,9 +6,9 @@
       "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
       "price": "R$ 70,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Card camiseta.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/camiseta.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/Camiseta.png"
+        "mobile": "/images/Mobile/Imagens cards/Card camiseta.png",
+        "tablet": "/images/Tablet/Imagens Cards/camiseta.png",
+        "desktop": "/images/Desktop/Imagens Cards/Camiseta.png"
       }
     },
     {
@@ -17,9 +17,9 @@
       "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
       "price": "R$ 180,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Card calça.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/calça.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/Calça.png"
+        "mobile": "/images/Mobile/Imagens cards/Card calça.png",
+        "tablet": "/images/Tablet/Imagens Cards/calça.png",
+        "desktop": "/images/Desktop/Imagens Cards/Calça.png"
       }
     },
     {
@@ -28,9 +28,9 @@
       "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
       "price": "R$ 250,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Card tenis.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/tenis.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/Tenis.png"
+        "mobile": "/images/Mobile/Imagens cards/Card tenis.png",
+        "tablet": "/images/Tablet/Imagens Cards/tenis.png",
+        "desktop": "/images/Desktop/Imagens Cards/Tenis.png"
       }
     },
     {
@@ -39,9 +39,9 @@
       "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
       "price": "R$ 150,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Card jaqueta jeans.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/jaqueta jeans.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/Jaqueta.png"
+        "mobile": "/images/Mobile/Imagens cards/Card jaqueta jeans.png",
+        "tablet": "/images/Tablet/Imagens Cards/jaqueta jeans.png",
+        "desktop": "/images/Desktop/Imagens Cards/Jaqueta.png"
       }
     },
     {
@@ -50,9 +50,9 @@
       "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
       "price": "R$ 120,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Cards óculos.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/óculos.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/óculos.png"
+        "mobile": "/images/Mobile/Imagens cards/Cards óculos.png",
+        "tablet": "/images/Tablet/Imagens Cards/óculos.png",
+        "desktop": "/images/Desktop/Imagens Cards/óculos.png"
       }
     },
     {
@@ -61,9 +61,9 @@
       "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
       "price": "R$ 120,00",
       "image": {
-        "mobile": "/public/images/Mobile/Imagens cards/Card bolsa.png",
-        "tablet": "/public/images/Tablet/Imagens Cards/bolsa.png",
-        "desktop": "/public/images/Desktop/Imagens Cards/Bolsa.png"
+        "mobile": "/images/Mobile/Imagens cards/Card bolsa.png",
+        "tablet": "/images/Tablet/Imagens Cards/bolsa.png",
+        "desktop": "/images/Desktop/Imagens Cards/Bolsa.png"
       }
     }
   ]
